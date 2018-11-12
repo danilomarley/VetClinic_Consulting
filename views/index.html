@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+  <!--JS Scripts-->
+  <!--JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Underscore-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+  <!--Backbone-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+  <!--JQuery UI JS-->
+  <script src="/js/jquery-ui.min.js"></script>
+  <!--Prime UI JS-->
+  <script src="/js/primeui.min.js"></script>
+  <!--Prime UI JS Extension-->
+  <script src="/js/primeui_extension.js"></script>
+
+  <!--Style Sheet-->
+  <!--JQuery UI CSS-->
+  <link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css" />
+  <!--Prime UI CSS-->
+  <link rel="stylesheet" type="text/css" href="/css/primeui.min.css" />
+  <!--Prime UI Theme-->
+  <link rel="stylesheet" type="text/css" href="/css/theme.css" />
+  <!--FontAwesome CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!--Project Views-->
+  <script src="/views_router.js"></script>
+  <!--Project Models-->
+  <script src="/clinic_model.js"></script>
+  <!--Project Collection-->
+  <script src="/clinic_collection.js"></script>
+
+  <!--Index View-->
+  <script src="clinic/index.js"></script>
+  <!--Detail View-->
+  <script src="clinic/detail.js"></script>
+
+  <div id="content"></div>
+  
+  <img id="loading" style="position: absolute;top: 47;right: 35;" src="/img/loading.svg" />
+  <!-- the form, used to show informations of model passed in index to edit -->
+  <script id="detailTemplate" type="text/template">
+    <form>
+      <h2><%= Name %></h2>
+      
+        <b>Address:</b>
+        <label><%= Address %></label>
+      <br/>
+
+      <b>City:</b>
+      <label><%= City %></label>
+    <br/>
+     
+        <b>Phone:</b>
+        <label><%= Phone %></label>
+      <br/>
+    </form>
+  </script>
+</body>
+
+
+</html>

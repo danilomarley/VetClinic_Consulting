@@ -1,4 +1,4 @@
-# Installation
+# Installation and Running
 
 ## Check that you have node and npm installed
 To check if you have Node.js installed, run this command in your terminal:
